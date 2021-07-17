@@ -1,0 +1,15 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kayacchang <egg734631@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "resume-cli": "^3.0.5"
+  },
+  "scripts": {
+    "predev": "resume validate",
+    "dev": "resume serve",
+    "pdf": "resume export public/resume.pdf --format pdf"
+  }
+}
