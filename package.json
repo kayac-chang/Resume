@@ -8,8 +8,11 @@
     "resume-cli": "^3.0.5"
   },
   "scripts": {
-    "predev": "resume validate",
+    "check": "resume validate",
+    "predev": "npm run check",
     "dev": "resume serve",
-    "pdf": "resume export public/resume.pdf --format pdf"
+    "prebuild": "npm run check",
+    "pdf": "resume export public/resume.pdf --format pdf",
+    "build": "npm run pdf"
   }
 }
