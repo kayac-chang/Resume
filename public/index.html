@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kayac Chang</title>
+    <meta name="description" content="Hello, I&#x27;m Kayac Chang. I&#x27;m Software Engineer focus on Web and Game industry. I provide modern web knowledge and technology to help company create high quality and performance product. I major on ES6+ Javascript and Typescript, with modern tech such as React and Vue. Also have experience on WebGL engine such as PixiJS, too." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--accentColor);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Kayac Chang</h1>
+          <h2>Programmer</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:egg734631@gmail.com">egg734631@gmail.com</a>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              (886) 905136090
+            </div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://github.com/kayac-chang">github.com/kayac-chang</a>
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>Hello, I'm Kayac Chang. I'm Software Engineer focus on Web and Game industry. I provide modern web knowledge and technology to help company create high quality and performance product. I major on ES6+ Javascript and Typescript, with modern tech such as React and Vue. Also have experience on WebGL engine such as PixiJS, too.</p>
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>Github</h4>
+                    <a href="https://github.com/kayac-chang">Hello Kayac</a>
+              </div>
+              <div>
+                  <h4>Linkedin</h4>
+                    <a href="https://www.linkedin.com/in/kai-chang-380b73162/">Kai Chang</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4> Lexionlu Design Firm</h4>
+                  <span>
+                    <time datetime="2020-10">Oct 2020</time> –
+                    <time datetime="2021-08">Aug 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Team Leader, Sr. Front-end Engineer</strong>
+                </div>
+              </header>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Develop high performance website using ReactJS, NextJS, VueJS, NuxtJS.</li>
+                    <li>Implement Design System by using TailwindCSS, SASS, PostCSS.</li>
+                    <li>Develop static site template using Nunjucks, Handlebar.</li>
+                    <li>Maintain legacy project such as .NET MVC.</li>
+                    <li>Setup CI / CD to increasing developing performance.</li>
+                    <li>Host test site on Google Cloud Platform for customer UAT.</li>
+                    <li>Containerization using Docker.</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Ganapati</h4>
+                  <span>
+                    <time datetime="2020-02">Feb 2020</time> –
+                    <time datetime="2020-10">Oct 2020</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Front-end Engineer</strong>
+                </div>
+              </header>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Develop cross-platform HTML5 Game with pixi.js and Typescript</li>
+                    <li>Web Development using React, Redux</li>
+                    <li>Unit Test using Mocha, Jest</li>
+                    <li>Web product optimization</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Sixone Studio</h4>
+                  <span>
+                    <time datetime="2019-03">Mar 2019</time> –
+                    <time datetime="2020-02">Feb 2020</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Front-end Engineer</strong>
+                </div>
+              </header>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Develop Game Framework based on pixi.js</li>
+                    <li>Develop Content Management System using MERN stack</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Best Distinction</h4>
+                  <span>
+                    <time datetime="2018-03">Mar 2018</time> –
+                    <time datetime="2019-02">Feb 2019</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>HTML5 Game Developer</strong>
+                </div>
+              </header>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Develop Game Framework based on pixi.js</li>
+                    <li>Optimized Web product performance</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Fubon Bank</h4>
+                  <span>
+                    <time datetime="2017-03">Mar 2017</time> –
+                    <time datetime="2018-03">Mar 2018</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>HTML5 Game Developer</strong>
+                </div>
+              </header>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Developed robust Java code for bank applications</li>
+                    <li>Worked with quality assurance team to set up scripts, test case and automation protocols</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>National University of Tainan</h4>
+                  <span>
+                    <time datetime="2011-06-01">Jun 2011</time> –
+                    <time datetime="2014-01-01">Jan 2014</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Department of Applied Mathematics</strong>
+                    <a href="https://eng.nutn.edu.tw/">eng.nutn.edu.tw</a>
+                </div>
+              </header>
+                <p>Bachelor</p>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Starlux Airline</h4>
+                  <span>
+                    <time datetime="2020-10">Oct 2020</time> –
+                    <time datetime="2021-08">Aug 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                  <span>
+                      <strong>Frontend Engineer</strong>
+                  </span>
+                    <a href="https://starlux.dev.lexionlu.xyz/">starlux.dev.lexionlu.xyz</a>
+                </div>
+              </header>
+                <p>Starlux Airline offical website using Nuxt.js</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Vehicle Dispatch System</h4>
+                  <span>
+                    <time datetime="2021-06">Jun 2021</time> –
+                    <time datetime="2021-07">Jul 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                  <span>
+                      <strong>Frontend Engineer</strong>
+                  </span>
+                    <a href="https://vehicle-dispatch-system.vercel.app/">vehicle-dispatch-system.vercel.app</a>
+                </div>
+              </header>
+                <p>Naxia using React and Next.js</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Naxia</h4>
+                  <span>
+                    <time datetime="2021-03">Mar 2021</time> –
+                    <time datetime="2021-07">Jul 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                  <span>
+                      <strong>Frontend Engineer</strong>
+                  </span>
+                    <a href="https://naxia-dev.sevenone.online/">naxia-dev.sevenone.online</a>
+                </div>
+              </header>
+                <p>Naxia using React and pixi.js</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Frontend Development</h4>
+                <ul class="tag-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend Development</h4>
+                <ul class="tag-list">
+                    <li>NodeJS</li>
+                    <li>Golang</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Game Development</h4>
+                <ul class="tag-list">
+                    <li>pixi.js</li>
+                    <li>Egret</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Chinese</h4>
+              Native speaker
+            </div>
+            <div>
+                <h4>English</h4>
+              fluent
+            </div>
+        </div>
+      </section>
+  </body>
+</html>

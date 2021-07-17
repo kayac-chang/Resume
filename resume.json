@@ -1,0 +1,166 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Kayac Chang",
+    "label": "Programmer",
+    "email": "egg734631@gmail.com",
+    "phone": "(886) 905136090",
+    "url": "https://github.com/kayac-chang",
+    "summary": "Hello, I'm Kayac Chang. I'm Software Engineer focus on Web and Game industry. I provide modern web knowledge and technology to help company create high quality and performance product. I major on ES6+ Javascript and Typescript, with modern tech such as React and Vue. Also have experience on WebGL engine such as PixiJS, too.",
+    "location": {
+      "city": "Taipei",
+      "countryCode": "ROC",
+      "region": "Taiwan"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "Hello Kayac",
+        "url": "https://github.com/kayac-chang"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Kai Chang",
+        "url": "https://www.linkedin.com/in/kai-chang-380b73162/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": " Lexionlu Design Firm",
+      "location": "Taipei, Taiwan",
+      "position": "Team Leader, Sr. Front-end Engineer",
+      "startDate": "2020-10",
+      "endDate": "2021-08",
+      "highlights": [
+        "Develop high performance website using ReactJS, NextJS, VueJS, NuxtJS.",
+        "Implement Design System by using TailwindCSS, SASS, PostCSS.",
+        "Develop static site template using Nunjucks, Handlebar.",
+        "Maintain legacy project such as .NET MVC.",
+        "Setup CI / CD to increasing developing performance.",
+        "Host test site on Google Cloud Platform for customer UAT.",
+        "Containerization using Docker."
+      ]
+    },
+    {
+      "name": "Ganapati",
+      "location": "Taipei, Taiwan",
+      "position": "Front-end Engineer",
+      "startDate": "2020-02",
+      "endDate": "2020-10",
+      "highlights": [
+        "Develop cross-platform HTML5 Game with pixi.js and Typescript",
+        "Web Development using React, Redux",
+        "Unit Test using Mocha, Jest",
+        "Web product optimization"
+      ]
+    },
+    {
+      "name": "Sixone Studio",
+      "location": "Taipei, Taiwan",
+      "position": "Front-end Engineer",
+      "startDate": "2019-03",
+      "endDate": "2020-02",
+      "highlights": [
+        "Develop Game Framework based on pixi.js",
+        "Develop Content Management System using MERN stack"
+      ]
+    },
+    {
+      "name": "Best Distinction",
+      "location": "Taipei, Taiwan",
+      "position": "HTML5 Game Developer",
+      "startDate": "2018-03",
+      "endDate": "2019-02",
+      "highlights": [
+        "Develop Game Framework based on pixi.js",
+        "Optimized Web product performance"
+      ]
+    },
+    {
+      "name": "Fubon Bank",
+      "location": "Taipei, Taiwan",
+      "position": "HTML5 Game Developer",
+      "startDate": "2017-03",
+      "endDate": "2018-03",
+      "highlights": [
+        "Developed robust Java code for bank applications",
+        "Worked with quality assurance team to set up scripts, test case and automation protocols"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "National University of Tainan",
+      "url": "https://eng.nutn.edu.tw/",
+      "area": "Department of Applied Mathematics",
+      "studyType": "Bachelor",
+      "startDate": "2011-06-01",
+      "endDate": "2014-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Backend Development",
+      "level": "Master",
+      "keywords": ["NodeJS", "Golang", "Java"]
+    },
+    {
+      "name": "Game Development",
+      "level": "Master",
+      "keywords": ["pixi.js", "Egret"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "fluent"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Starlux Airline",
+      "description": "Starlux Airline offical website using Nuxt.js",
+      "keywords": ["Vue.js", "Nuxt.js", "Javascript"],
+      "startDate": "2020-10",
+      "endDate": "2021-08",
+      "url": "https://starlux.dev.lexionlu.xyz/",
+      "roles": ["Frontend Engineer"],
+      "type": "application"
+    },
+    {
+      "name": "Vehicle Dispatch System",
+      "description": "Naxia using React and Next.js",
+      "keywords": ["React", "Next.js", "Typescript"],
+      "startDate": "2021-06",
+      "endDate": "2021-07",
+      "url": "https://vehicle-dispatch-system.vercel.app/",
+      "roles": ["Frontend Engineer"],
+      "type": "application"
+    },
+    {
+      "name": "Naxia",
+      "description": "Naxia using React and pixi.js",
+      "keywords": ["React", "pixi.js", "Typescript"],
+      "url": "https://naxia-dev.sevenone.online/",
+      "startDate": "2021-03",
+      "endDate": "2021-07",
+      "roles": ["Frontend Engineer"],
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
